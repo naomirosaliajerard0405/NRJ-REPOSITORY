@@ -1,0 +1,4 @@
+NAME: NAOMI ROSALIA JERARD
+COURSE: BACHELOR OF COMPUTER APPLICATIONS 
+
+One significant lesson learned from GitHub is the immense value of version control and collaborative development.
