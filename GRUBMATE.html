@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GRUBMATE</title>
+<style>
+  /* Reset some default styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f0e1; /* Light beige background */
+    color: #333;
+  }
+
+  /* Header Styles */
+  header {
+    background-color: #001f3f; /* Deep blue */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+
+  header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+
+  /* Navigation Bar */
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #ffd700; /* Gold color on hover */
+  }
+
+  /* Main Content */
+  main {
+    padding: 40px 20px;
+  }
+
+  /* Cuisine Sections */
+  section.cuisine {
+    margin-bottom: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  /* Specific colors for each cuisine */
+  .indian {
+    background-color: #ff7043; /* Vibrant Orange */
+    color: #fff;
+  }
+
+  .japanese {
+    background-color: #4db6ac; /* Teal */
+    color: #fff;
+  }
+
+  .korean {
+    background-color: #ffd700; /* Gold */
+    color: #333;
+  }
+
+  .italian {
+    background-color: #8bc34a; /* Green */
+    color: #fff;
+  }
+
+  .british {
+    background-color: #607d8b; /* Blue Gray */
+    color: #fff;
+  }
+
+  .turkish {
+    background-color: #e91e63; /* Pinkish Red */
+    color: #fff;
+  }
+
+  /* Title of each section */
+  h2.cuisine-title {
+    padding: 15px;
+    text-align: center;
+    font-size: 2em;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+  }
+
+  /* Food items list */
+  .food-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  /* Individual food card */
+  .food-card {
+    background-color: rgba(255,255,255,0.2);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  }
+
+  /* Food images */
+  .food-img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  /* Food name */
+  .food-name {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  /* Footer Styles */
+  footer {
+    background-color: #001f3f;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+  }
+
+  /* Responsive adjustments */
+  @media(max-width: 768px){
+    .food-items {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .food-card {
+      width: 80%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>GRUBMATE</h1>
+  <nav>
+    <a href="#indian">Indian</a>
+    <a href="#japanese">Japanese</a>
+    <a href="#korean">Korean</a>
+    <a href="#italian">Italian</a>
+    <a href="#british">British</a>
+    <a href="#turkish">Turkish</a>
+  </nav>
+</header>
+
+<main>
+  <!-- Indian Cuisine -->
+  <section class="cuisine indian" id="indian">
+    <h2 class="cuisine-title">Indian Cuisine</h2>
+    <div class="food-items">
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1603133872874-8d2f3e7d7b8b?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="Butter Chicken" class="food-img" />
+        <div class="food-name">Butter Chicken</div>
+      </div>
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1617199279555-c9f4fb8f68b1?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="Paneer Tikka" class="food-img" />
+        <div class="food-name">Paneer Tikka</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Japanese Cuisine -->
+  <section class="cuisine japanese" id="japanese">
+    <h2 class="cuisine-title">Japanese Cuisine</h2>
+    <div class="food-items">
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1609822387865-7e9d1e291f98?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="Sushi" class="food-img" />
+        <div class="food-name">Sushi</div>
+      </div>
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1617199279555-c9f4fb8f68b1?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="Ramen" class="food-img" />
+        <div class="food-name">Ramen</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Korean Cuisine -->
+  <section class="cuisine korean" id="korean">
+    <h2 class="cuisine-title">Korean Cuisine</h2>
+    <div class="food-items">
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1617223637828-4e7a6b1a6e3b?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="Kimchi" class="food-img" />
+        <div class="food-name">Kimchi</div>
+      </div>
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1617127623352-0b7f4d1f4a36?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="Bibimbap" class="food-img" />
+        <div class="food-name">Bibimbap</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Italian Cuisine -->
+  <section class="cuisine italian" id="italian">
+    <h2 class="cuisine-title">Italian Cuisine</h2>
+    <div class="food-items">
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1606312619390-1f4b1d3d0f3b?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="Pizza" class="food-img" />
+        <div class="food-name">Pizza</div>
+      </div>
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1609087769327-4a4a07b0b6a3?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="Pasta" class="food-img" />
+        <div class="food-name">Pasta</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- British Cuisine -->
+  <section class="cuisine british" id="british">
+    <h2 class="cuisine-title">British Cuisine</h2>
+    <div class="food-items">
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="Fish and Chips" class="food-img" />
+        <div class="food-name">Fish & Chips</div>
+      </div>
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1607047036518-748b7f1f0a7e?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="English Breakfast" class="food-img" />
+        <div class="food-name">English Breakfast</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Turkish Cuisine -->
+  <section class="cuisine turkish" id="turkish">
+    <h2 class="cuisine-title">Turkish Cuisine</h2>
+    <div class="food-items">
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1606411941899-1b7a2b7a9b2e?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="Doner Kebab" class="food-img" />
+        <div class="food-name">Doner Kebab</div>
+      </div>
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1610231534910-3d0f8be4e2a7?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="Baklava" class="food-img" />
+        <div class="food-name">Baklava</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2024 GRUBMATE - Your Food Delivery Partner
+</footer>
+
+</body>
+</html>
